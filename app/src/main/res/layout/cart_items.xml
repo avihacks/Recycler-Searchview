@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Rl_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/cart_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+
+    <TextView
+        android:id="@+id/cart_name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="product name"
+        android:layout_toRightOf="@+id/cart_image"/>
+    <TextView
+        android:id="@+id/cart__prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prize"
+        android:layout_toRightOf="@+id/cart_image"
+        android:layout_below="@+id/cart_name"/>
+    <TextView
+        android:id="@+id/cart__quan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quan"
+        android:layout_toRightOf="@+id/cart_image"
+        android:layout_below="@+id/cart__prize"/>
+
+        <ImageView
+            android:id="@+id/cart_img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_add"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/cart_img_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_remove"
+            android:layout_below="@+id/cart__prize"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
